@@ -1,0 +1,72 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+   background-image: url("images/sunny.jpg"); 
+   height:100vh;
+   /* width: 100vw; */
+   overflow: hidden;
+   background-repeat: no-repeat;
+   background-position: top center;
+   font-family: Arial, Helvetica, sans-serif;
+   background-size: cover;
+
+}
+.app-main{
+   
+    width:27%;
+    margin:100px auto;
+    padding:20px;
+    background-color: rgba(251, 251, 251, 0.7);
+    text-align: center;
+    height: 70vh;
+}
+.app-main > *{
+    margin-bottom: 20px;
+}
+.Input-box{
+    background-color: rgba(255, 255, 236, 0.7);
+    padding:7px;
+    width:90%;
+    border: none;
+    border-radius: 4px 4px;
+    text-align: center;
+}
+.Input-box::placeholder{
+    text-align: center;
+    color: black;
+}
+.Input-box:focus{
+    background-color: rgba(255,255,255);
+}
+.weather-body{
+    margin: auto;
+    width:90%;
+    background-color: rgba(255, 255, 236, 0.7);
+    padding:20px;
+    height:55vh;
+    font-family: 'Libre Baskerville', serif;
+font-family: 'Old Standard TT', serif;
+font-weight: 100;
+    
+}
+
+.location-details > *{
+    padding: 12px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.weather-status >*{
+    padding: 12px;
+}
+.temperature{
+    font-weight: bold;
+    font-size: 50px;
+    text-shadow: 3px 4px rgba(0,0,0,0.3);
+}
+.min-max, .weather{
+    font-size: 18px;
+}
