@@ -8,8 +8,7 @@ const weatherApi={
 
 }
 
-const corse = require(corse);
-app.use(cors(););
+
 
 // event listener function on keypress
 

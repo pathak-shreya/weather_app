@@ -1,7 +1,8 @@
 const http=require("http");
 const fs=require("fs");
 var requests=require("requests");
-
+const corse = require(corse);
+app.use(cors());
 
 const homefile=fs.readFileSync("index.html","utf-8");
 
