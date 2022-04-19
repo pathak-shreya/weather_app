@@ -35,31 +35,48 @@ function showweatherreport(weather){
     let minmaxtemp=document.getElementById('min-max');
     minmaxtemp.innerHTML=`${Math.floor(weather.main.temp_min)}&deg;C (min)/${Math.ceil(weather.main.temp_max)}&deg;C (max)`;
 
+   
+    let icon=document.getElementById('icon');
+
     let weathertype=document.getElementById('weather');
     weathertype.innerText=`${weather.weather[0].main}`;
 
     let date=document.getElementById('date');
     let todaydate=new Date();
     date.innerText=dateManage(todaydate);
+     
 
     if(weathertype.textContent=='Clear'){
-        document.body.style.backgroundImage="url('images/sunny_sky.jpg')";
+        document.body.style.backgroundImage="url('images/sunny.jpg')";
+        icon.innerHTML=`<img src="images/sun.png" style='height:50px'/>`
 
+        
     }
     else if(weathertype.textContent=='Haze'){
         document.body.style.backgroundImage="url('images/cloudy_sky.jpg')";
+        icon.innerHTML=`<img src="images/cloudy.png" style='height:50px'/>`
+
     }
     else if(weathertype.textContent=='Clouds'){
         document.body.style.backgroundImage="url('images/cloudy_sky.jpg')";
+        icon.innerHTML=`<img src="images/cloudy.png" style='height:50px'/>`
     }
     else if(weathertype.textContent=='Rain'){
         document.body.style.backgroundImage="url('images/rainy.jpg')";
+
+        icon.innerHTML=`<img src="images/raincloud.png" style='height:50px'/>`
+
+
     }
     else if(weathertype.textContent=='Snow'){
         document.body.style.backgroundImage="url('images/snow.jpg')";
+        icon.innerHTML=`<img src="images/snowman.png" style='height:50px'/>`
+
     }
     else if(weathertype.textContent=='Thunderstorm'){
         document.body.style.backgroundImage="url('images/thunderstorm.jpg')";
+        icon.innerHTML=`<img src="images/thunder.png" style='height:50px'/>`
+
     }
 }
 // date manage
