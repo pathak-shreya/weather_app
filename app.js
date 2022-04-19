@@ -1,10 +1,16 @@
 // api.openweathermap.org/data/2.5/weather?q={city names}&appid={API key}
 
+const { append } = require("express/lib/response");
+
 const weatherApi={
     key: "6da1fca3910e849efa3d69194e85246b",
     baseUrl:"https://api.openweathermap.org/data/2.5/weather",
 
 }
+
+const corse = require(corse);
+app.use(cors(););
+
 // event listener function on keypress
 
 const searchInputBox=document.getElementById('Input-box');
