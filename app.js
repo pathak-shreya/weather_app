@@ -1,6 +1,5 @@
 // api.openweathermap.org/data/2.5/weather?q={city names}&appid={API key}
 
-const { append } = require("express/lib/response");
 
 const weatherApi={
     key: "6da1fca3910e849efa3d69194e85246b",
