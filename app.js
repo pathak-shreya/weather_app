@@ -41,6 +41,8 @@ function showweatherreport(weather){
 
    
     let icon=document.getElementById('icon');
+    
+   
 
     let weathertype=document.getElementById('weather');
     weathertype.innerText=`${weather.weather[0].main}`;
@@ -53,22 +55,26 @@ function showweatherreport(weather){
     if(weathertype.textContent=='Clear'){
         document.body.style.backgroundImage="url('images/sunny.jpg')";
         icon.innerHTML=`<img src="images/sun.png" style='height:50px'/>`
+     
 
         
     }
     else if(weathertype.textContent=='Haze'){
         document.body.style.backgroundImage="url('images/cloudy_sky.jpg')";
         icon.innerHTML=`<img src="images/cloudy.png" style='height:50px'/>`
+        
 
     }
     else if(weathertype.textContent=='Clouds'){
         document.body.style.backgroundImage="url('images/cloudy_sky.jpg')";
         icon.innerHTML=`<img src="images/cloudy.png" style='height:50px'/>`
+      
     }
     else if(weathertype.textContent=='Rain'){
         document.body.style.backgroundImage="url('images/rainy.jpg')";
 
         icon.innerHTML=`<img src="images/raincloud.png" style='height:50px'/>`
+
 
 
     }
